@@ -1,4 +1,4 @@
-[
+export const features = [
   {
     "feature": "HD Video Classes",
     "description": "Crystal-clear video conferencing with advanced features like screen sharing, breakout rooms, and Interactive whiteboards."
@@ -23,4 +23,6 @@
     "feature": "Mobile Ready",
     "description": "Seamless experience across all devices with native mobile apps and responsive web design for learning on-the-go."
   }
-]
+];
+
+export default features;

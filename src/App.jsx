@@ -1,23 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Route,Routes } from 'react-router'
-import Navbar from './component/Navbar'
-import HomePage from './pages/HomePage'
-import Footer from './component/Footer'
+import React from 'react';
+import './App.css';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
-
   return (
-    <div>
-      <Navbar className='bg-[#ffffff] w-full min-h-screen' />
-      <Routes >
-        <Route path='/' element={<HomePage/>}/>
-      </Routes>
+    <div className="min-h-screen flex flex-col justify-between bg-[#F5F1F1]">
+      <Navbar />
+      <main className="flex-grow">
+        <AppRoutes />
+      </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
